@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DontPadController {
 
-    @GetMapping("/hello")
+    @GetMapping
     public String getIndex() {
         return "Hello World";
     }
