@@ -6,9 +6,17 @@ import java.util.HashMap;
 
 @Service
 public class DontPadService {
-    private HashMap<String, String> pages;
+    private final HashMap<String, String> pages;
+
+    public DontPadService() {
+        this.pages = new HashMap<>();
+    }
 
     public String getPage(String path) {
         return pages.get(path);
+    }
+
+    public void postPage(String requestURI, String body) {
+        pages.put(requestURI, body);
     }
 }
