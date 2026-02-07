@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
-    @RequestMapping("/{path:[^\\.]*}")
+    @RequestMapping({"/", "/{path:^(?!.*\\.).*$}", "/**/{path:^(?!.*\\.).*$}"})
     public String anyPath() {
         return "forward:/index.html";
     }
