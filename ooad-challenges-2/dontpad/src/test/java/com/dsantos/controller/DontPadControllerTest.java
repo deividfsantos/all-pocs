@@ -26,9 +26,8 @@ class DontPadControllerTest {
         DontPadController controller = new DontPadController(service);
 
         HttpServletRequest req = new MockHttpServletRequest("POST", "/path/foo");
-        String body = "conteudo";
+        String body = "content";
         assertEquals(body, controller.postPage(req, body));
-        // verify stored
         assertEquals(body, service.getPage("/path/foo"));
     }
 }
