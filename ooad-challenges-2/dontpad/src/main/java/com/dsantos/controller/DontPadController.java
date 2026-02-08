@@ -1,5 +1,6 @@
-package com.dsantos;
+package com.dsantos.controller;
 
+import com.dsantos.service.DontPadService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

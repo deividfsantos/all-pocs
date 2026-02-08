@@ -1,4 +1,4 @@
-package com.dsantos;
+package com.dsantos.service;
 
 import org.springframework.stereotype.Service;
 

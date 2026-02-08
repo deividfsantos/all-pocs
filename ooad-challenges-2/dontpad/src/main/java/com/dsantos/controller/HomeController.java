@@ -1,4 +1,4 @@
-package com.dsantos;
+package com.dsantos.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
